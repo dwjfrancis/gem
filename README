@@ -1,0 +1,39 @@
+Author: David Francis
+Created: April 4, 2016
+Readme for the colorizr ruby gem for the Beginers Ruby course at Udacity
+
+Colorizr is a ruby gem to let you add color to a string while doing a puts, print or pp 
+in Ruby code.  It is a simple gem that will take a string using the method call for the 
+desired color return the string in that color for the use of terminal output.
+
+To use the colorizr gem you should have the code in the gem/lib directory with the 
+colorizr.rb file included in it.  You would also need the colorizr.gemspec file in the gem directory (this can be renamed as long as the lib directory is not changed).
+You will have to build and install this gem using the ommands:
+gem build colorizr.gemspec
+gem install colorizr-0.0.2.gem
+
+And the insure you add "require 'colorizr'"
+in the calling code.
+
+Lastly insure you build the color methods by calling 
+String.create_colors
+
+this will allow you to send the string to the terminal in color by:
+
+astring = "This will be in color"
+puts astring.red
+
+for the colors:
+red, green, yellow, blue, pink, light_blue, white, light_gray, black
+
+In case it is needed there are two other methods:
+
+colors
+and 
+sample_colors
+
+that will show the colors this gem is equipped to let you use. If you need more colors
+look up the color and value, add them to the hashand rebuild the gem.
+
+Have fun!
+
